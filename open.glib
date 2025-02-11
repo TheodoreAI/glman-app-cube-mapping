@@ -32,7 +32,7 @@ Fragment	cube.frag
 Program    	Cube				\
            	uReflectUnit 6             	\
            	uRefractUnit 7             	\
-		uMix <0. 0. 1.>			\
+			uMix <0. 0. 1.>			\
         	uNoiseAmp <0. 0. 5.>		\
         	uNoiseFreq <0.0 0.1 0.5>	\
 		uWhiteMix 0.2			\

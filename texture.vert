@@ -1,4 +1,3 @@
-
 #version 330 compatibility
 
 out vec2	vST;

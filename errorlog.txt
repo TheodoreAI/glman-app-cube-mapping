@@ -2,6 +2,5 @@
 ERROR: 0:1: '' : illegal non-ASCII character (0xff)
 ERROR: 0:1: '' : illegal non-ASCII character (0xfe)
 WARNING: 0:1: '' :  #version directive missing
-ERROR: 0:1: 'o' : syntax error syntax error
 
 

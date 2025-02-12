@@ -74,7 +74,6 @@ main( )
 
 	vec3 reflectVector = reflect(Eye, Normal);
 	vec3 reflectColor = texture(uReflectUnit, reflectVector).rgb;
-
 	vec3 refractVector = refract(Eye, Normal, uEta);
 
 	vec3 refractColor;

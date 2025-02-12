@@ -1,4 +1,4 @@
 
-ERROR: 0:78: 'vec3' : syntax error syntax error
+ERROR: 0:91: 'assign' :  cannot convert from '3-component vector of mediump float' to 'FragColor 4-component vector of mediump float'
 
 

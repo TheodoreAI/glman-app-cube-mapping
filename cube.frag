@@ -72,10 +72,12 @@ main( )
 	Normal = PerturbNormal3( angx, angy, angz, Normal );
 	Normal = normalize( gl_NormalMatrix * Normal );
 
+	//* compute the reflection vector */
 	vec3 reflectVector = reflect(Eye, Normal);
 	vec3 reflectColor = texture(uReflectUnit, reflectVector).rgb;
-	vec3 refractVector = refract(Eye, Normal, uEta);
 
+	//* compute refraction vector */
+	vec3 refractVector = refract(Eye, Normal, uEta);
 	vec3 refractColor;
 	if( all( equal( refractVector, vec3(0.,0.,0.) ) ) )
 	{
@@ -86,8 +88,6 @@ main( )
 		refractColor = texture( uRefractUnit, refractVector ).rgb;
 		refractColor = mix( refractColor, WHITE, uWhiteMix );
 	}
-    vec3 color = mix(refractColor, reflectColor, uMix);
-    color = (mix(color, WHITE, uWhiteMix));
-
-	gl_FragColor = vec4(color, 1.);
+   
+    gl_FragColor = vec4(mix(refractColor, reflectColor, uMix), 1.0);
 }

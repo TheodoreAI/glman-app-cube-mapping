@@ -1,4 +1,4 @@
 
-ERROR: 0:83: 'd' : redefinition 
+ERROR: 0:91: 'assign' :  cannot convert from '3-component vector of mediump float' to 'FragColor 4-component vector of mediump float'
 
 
